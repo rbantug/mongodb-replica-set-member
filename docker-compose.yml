@@ -6,6 +6,4 @@ services:
     image: ronbantug/mongo-rs
     ports:
       - 27020:27017
-    networks:
-      - mongo-network
     command: ["-f", "/etc/mongo.conf"]
