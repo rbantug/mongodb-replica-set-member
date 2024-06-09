@@ -1,0 +1,11 @@
+version: '3'
+services:
+  mongo-extra:
+    container_name: mongo-extra
+    hostname: mongo-extra
+    image: ronbantug/mongo-rs
+    ports:
+      - 27020:27017
+    networks:
+      - mongo-network
+    command: ["-f", "/etc/mongo.conf"]
